@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 16px; }
+
+.custom_container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto; }
+  @media (min-width: 3500px) {
+    .custom_container {
+      max-width: 90%; } }
+  @media (max-width: 3500px) {
+    .custom_container {
+      max-width: 3000px; } }
+  @media (max-width: 3000px) {
+    .custom_container {
+      max-width: 2700px; } }
+  @media (max-width: 2550px) {
+    .custom_container {
+      max-width: 2100px; } }
+  @media (max-width: 1920px) {
+    .custom_container {
+      max-width: 1600px; } }
+  @media (max-width: 1600px) {
+    .custom_container {
+      max-width: 1300px; } }
+  @media (max-width: 1200px) {
+    .custom_container {
+      max-width: 1070px; } }
+  @media (max-width: 992px) {
+    .custom_container {
+      max-width: 850px; } }
+  @media (max-width: 767.98px) {
+    .custom_container {
+      max-width: 650px; } }
+  @media (max-width: 575.98px) {
+    .custom_container {
+      max-width: 100%; } }
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 30px 0;
+  color: #005490;
+  text-align: center;
+  text-transform: uppercase; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600; }
+
+a {
+  color: #005490; }
+  a:hover {
+    color: #004577; }
+
+.sub_heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  font-size: 22px;
+  margin-bottom: 20px; }
+
+.colored {
+  color: #005490; }
+
+.centered_heading {
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase; }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.btn_transparent, .btn_filled {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  padding: 15px 45px;
+  border: 2px solid white;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 500; }
+
+.btn_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px; }
+
+.btn_filled {
+  background-color: #005490;
+  border-color: transparent; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }

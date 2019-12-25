@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+header {
+  position: relative;
+  -webkit-box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.1); }
+  header .custom_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0; }
+  header .logo_wrapper {
+    padding-top: 0px; }
+    header .logo_wrapper a {
+      text-decoration: none; }
+      header .logo_wrapper a img {
+        max-width: 150px; }
+  header .nav_wrapper ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px; }
+    header .nav_wrapper ul li {
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: 300; }
+      header .nav_wrapper ul li a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-weight: 500; }
+        header .nav_wrapper ul li a:hover {
+          color: #005490; }
+      header .nav_wrapper ul li.active a {
+        color: #005490;
+        font-weight: 600; }
+  @media (max-width: 1200px) {
+    header .nav_wrapper ul {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      header .nav_wrapper ul li {
+        font-size: 18px; } }
+  @media (max-width: 992px) {
+    header .nav_wrapper ul {
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+      position: absolute;
+      left: 0;
+      margin-top: 0;
+      z-index: 100;
+      top: 90px;
+      margin-top: 0;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      background-color: white;
+      -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+      header .nav_wrapper ul li {
+        font-size: 18px;
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid #eee; }
+        header .nav_wrapper ul li a {
+          display: block;
+          width: 100%;
+          padding: 10px 20px;
+          -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+          color: #005490; }
+          header .nav_wrapper ul li a:hover {
+            background-color: transparent;
+            color: #005490; }
+        header .nav_wrapper ul li:first-of-type a {
+          border-top: 0; }
+        header .nav_wrapper ul li:last-of-type a {
+          border-bottom: 0; }
+        header .nav_wrapper ul li.active a {
+          color: #005490; } }
+
+.burger-slim {
+  background: transparent;
+  position: absolute;
+  right: 50px;
+  top: 40px;
+  height: 20px;
+  width: 15px;
+  cursor: pointer;
+  display: none;
+  z-index: 10;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  @media (max-width: 992px) {
+    .burger-slim {
+      display: block; } }
+
+.burger-slim:before, .burger-slim:after {
+  background: black;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  content: "";
+  height: 2px;
+  left: 0;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  width: 20px; }
+
+.burger-slim:before {
+  -webkit-box-shadow: black 0 5.5px 0 0;
+          box-shadow: black 0 5.5px 0 0;
+  position: absolute;
+  top: 0; }
+
+.burger-slim:after {
+  position: absolute;
+  top: calc(100% - 9px); }
+
+.burger-slim.active:before {
+  -webkit-box-shadow: transparent 0 0 0 0;
+          box-shadow: transparent 0 0 0 0;
+  top: 50%;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg); }
+
+.burger-slim.active:after {
+  top: 50%;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg); }
